@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pareil A$# A1 &&
+
+cd $1 2>/dev/null

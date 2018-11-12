@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo $# | grep -q 2 && echo 2 | grep -q $# 
+    
+echo A$1 | grep -q A$2   &&      echo A$2 | grep -q A$1 

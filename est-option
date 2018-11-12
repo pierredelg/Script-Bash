@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if pareil $# 1
+
+then
+
+echo $1 | cut -c1 | grep -q "-"  
+
+fi 

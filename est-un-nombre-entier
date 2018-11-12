@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if pareil $# 1
+
+then
+
+	if $(echo $1 | grep -q -F ",")
+
+	then
+		false
+
+	elif $(echo $1 | grep -q -F ".") 
+
+	then 
+		false 
+
+	elif $(echo $1 | grep -q -e [A-Za-z]) 
+	
+	then
+		 false
+	else 
+		 true  
+	fi
+else 
+	 false 
+
+fi 

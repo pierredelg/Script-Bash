@@ -1,0 +1,19 @@
+#!/bin/bash
+
+! est-un-nombre-entier $1 && exit 1
+
+n=$1
+
+while ! pareil $n 0
+
+do
+
+	r=$(expr $n % 2)
+
+	n=$(expr $n / 2)
+
+	b="$r$b"
+
+done
+
+echo $b
